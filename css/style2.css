@@ -1,0 +1,46 @@
+.body{
+
+	margin: 0;
+    padding: 0;
+}
+
+div {
+	text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+	font-size: 20px;
+	color: #000;
+}
+p{	
+	display: inline-block;  
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+	color: #fff;
+	font-size: 20px;
+	font-family: Lato; 
+}
+
+p:nth-child(1) {
+    background: #4183D7;
+}
+
+p:nth-child(2) {
+    background: #59ABE3;
+}
+
+p:nth-child(3) {
+    background: #22A7F0;
+}
+
+p:nth-child(4) {
+    background: #52B3D9;
+}
+
+p:nth-child(5) {
+    background: #81CFE0;
+} 

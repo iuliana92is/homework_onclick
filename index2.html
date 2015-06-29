@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+	<head>
+	    <title>OnClickCounter Homework 3</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" href="css/style2.css" type="text/css" />
+	    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+
+	<div>
+		<p>Click'uri: <a> 0 </a></p>
+		<p>Click'uri: <a> 0 </a></p>
+		<p>Click'uri: <a> 0 </a></p>
+		<p>Click'uri: <a> 0 </a></p>
+		<p>Click'uri: <a> 0 </a></p>
+	</div>
+	
+	<script type="text/javascript">
+	    var clicks = 0;
+		var elemList = document.getElementsByTagName("p");
+		
+		for (var i = 0; i < elemList.length; i++) {   
+
+			elemList[i].onclick = function(e) {
+				// http://www.quirksmode.org/js/events_properties.html#target
+				var childrens = e.target.children; 
+				childrens[0].innerHTML = parseInt(childrens[0].innerHTML, 10) + 1; 
+			}
+
+		}
+    </script>
+	</body>
+
+</html>
